@@ -2,6 +2,18 @@
 
 **One ship. Too many captains.** A colorful browser party game for 2–8 players, joining from their own devices with a room code. Players receive private missions while changing the same live spaceship controls. No typing during rounds.
 
+## Play the game
+
+**[Launch Don’t Press That!](https://dont-press-that.abtahac.workers.dev)**
+
+Create a room and share its code with your friends. Each player joins from their own browser.
+
+## My contribution
+
+I shaped the game concept and chose tap-based gameplay to keep rounds fast and accessible. I configured the development environment, resolved dependency installation issues, and tested two-player gameplay locally.
+I also published the source on GitHub, configured the Cloudflare D1 database, and deployed the frontend and multiplayer API on Cloudflare Workers.
+The initial implementation was generated with AI assistance. My work focused on product decisions, setup, troubleshooting, testing, and deployment.
+
 ## Gameplay
 
 - A captain creates a room and shares its five-character code.
@@ -31,7 +43,7 @@ Open the local address printed by Vite. Use an incognito window for a second pla
 
 GitHub hosts the source repository. Cloudflare Workers hosts the playable frontend and API, and Cloudflare D1 stores rooms. **GitHub Pages cannot run this server-backed game by itself.**
 
-The deployment produces a URL shaped like `https://dont-press-that.YOUR-SUBDOMAIN.workers.dev`. Replace this example with the actual URL in your GitHub repository's About section. You can later attach a domain you own. The standalone version has no ChatGPT account dependency or sign-in integration.
+The game is deployed at https://dont-press-that.abtahac.workers.dev. Deployment instructions are available in START-HERE.md..  Replace this example with the actual URL in your GitHub repository's About section. You can later attach a domain you own. The standalone version has no ChatGPT account dependency or sign-in integration.
 
 ## Stack and architecture
 
@@ -73,7 +85,9 @@ npx pnpm@11.25.0 test
 npx pnpm@11.25.0 run build
 ```
 
-The export was checked with TypeScript, game logic tests, and a Cloudflare Worker production build. The original deployment's API was also tested for creating a room, joining two players, host-only launch, private task filtering, simultaneous taps, and synchronization. Your own account's deployed version still needs a two-device smoke test after configuration.
+Validation included TypeScript checks, game logic tests, a production build, and API checks for room creation, joining, host-only launch, private-task filtering, and simultaneous updates.
+
+I tested two-player gameplay locally using separate browser sessions and confirmed that shared controls synchronized between them.
 
 ## Current scope
 
