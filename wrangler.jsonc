@@ -14,7 +14,7 @@
     {
       "binding": "DB",
       "database_name": "dont-press-that-db",
-      "database_id": "00000000-0000-4000-8000-000000000000",
+      "database_id": "495849bf-ddc7-4cb5-9042-6170fe3023bb",
       "migrations_dir": "drizzle"
     }
   ]
