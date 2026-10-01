@@ -23,7 +23,6 @@ The initial implementation was generated with AI assistance. My work focused on 
 🎮 **[Play Don’t Press That!](https://dont-press-that.abtahac.workers.dev)**
 
 ## Gameplay
-## Gameplay
 
 - A captain creates a room and shares its five-character code.
 - Two to eight players choose callsigns and avatars, then board.
