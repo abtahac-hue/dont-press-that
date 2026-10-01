@@ -14,10 +14,6 @@ I shaped the game concept and chose tap-based gameplay to keep rounds fast and a
 I also published the source on GitHub, configured the Cloudflare D1 database, and deployed the frontend and multiplayer API on Cloudflare Workers.
 The initial implementation was generated with AI assistance. My work focused on product decisions, setup, troubleshooting, testing, and deployment.
 
-# Don’t Press That! ✳
-
-**One ship. Too many captains.** A colorful browser party game...
-
 ## Live Demo
 
 🎮 **[Play Don’t Press That!](https://dont-press-that.abtahac.workers.dev)**
